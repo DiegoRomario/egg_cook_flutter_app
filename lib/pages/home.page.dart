@@ -1,5 +1,6 @@
 import 'package:egg_cook_flutter_app/blocs/app.bloc.dart';
 import 'package:egg_cook_flutter_app/pages/widgets/action-buttons.widget.dart';
+import 'package:egg_cook_flutter_app/pages/widgets/progress.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -27,6 +28,10 @@ class HomePage extends StatelessWidget {
           height: 10,
         ),
         ActionButtons(),
+        SizedBox(
+          height: 10,
+        ),
+        Progress(),
       ],
     ));
   }
