@@ -2,7 +2,7 @@ import 'package:egg_cook_flutter_app/themes/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'blocs/app.blockl.dart';
+import 'blocs/app.bloc.dart';
 import 'pages/splash.page.dart';
 
 void main() => runApp(MyApp());
