@@ -12,31 +12,32 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloc = Provider.of<AppBloc>(context);
     return Scaffold(
-        body: Column(
+        body: ListView(
       children: <Widget>[
         SizedBox(
-          height: 60,
+          height: 50,
         ),
-        Text(bloc.selected),
-        Text(bloc.state),
-        Text(bloc.time.toString()),
-        Text(bloc.seconds.toString()),
-        SizedBox(
-          height: 10,
+        Text(
+          "Egg Cook",
+          style: TextStyle(
+            fontSize: 34,
+            fontWeight: FontWeight.bold,
+          ),
+          textAlign: TextAlign.center,
         ),
-        TypeButtons(),
-        SizedBox(
-          height: 10,
-        ),
-        ActionButtons(),
-        SizedBox(
-          height: 10,
+        Eggs(),
+        Padding(
+          padding: EdgeInsets.all(20),
+          child: TypeButtons(),
         ),
         Progress(),
         SizedBox(
-          height: 10,
+          height: 20,
         ),
-        Eggs()
+        Padding(
+          padding: EdgeInsets.all(20),
+          child: ActionButtons(),
+        ),
       ],
     ));
   }
